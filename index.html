@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <script src="index.js" defer></script>
+</head>
+<style>
+    body {
+        /* background-image: url(images/5312542059304970083.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0% 40%; */
+               
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main #todos-input {
+        width: 200px;
+        height: 30px;
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .main #add-todo {
+        height: 40px;
+        width: 100px;
+        background-color: hsl(195, 53%, 79%);
+        cursor: pointer;
+        border-radius: 10px;
+        margin-left: 10px;
+        transition: 0.2s ease;
+    }
+    .main #add-todo:hover {
+        background-color: hsl(195, 53%, 69%);
+    }
+    .todo {
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .todo-done {
+        text-decoration: line-through;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .container  #todos-container div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        right: 45px;
+    }
+    .delete-btn {
+        background-color: red;
+        border: 1px red solid;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 0 0 0 10px;
+        cursor: pointer;
+        border: none;
+    }
+    .container  #todos-container div p {
+        color: black;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="main">
+            <input type="text" id="todos-input">
+            <button id="add-todo">Add todo</button>
+        </div>
+       
+        <div id="todos-container"></div>
+    </div>
+  
+</body>
+</html>
